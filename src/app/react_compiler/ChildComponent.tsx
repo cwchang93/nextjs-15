@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 
 const ChildComponent = ({ name }: { name: string }) => {
+  "use memo";
   useEffect(() => {
     console.log("in child");
   });

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import ChildComponent from "./ChildComponent";
 
 const ReactCompilerPage = () => {
+  "use memo";
+
   const [count, setCount] = useState(0);
 
   const [name, setName] = useState("");

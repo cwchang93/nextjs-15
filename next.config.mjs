@@ -2,7 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     experimental : {
-        reactCompiler: true,
+        reactCompiler: {
+            compilationMode: "annotation"
+        },
     }
 
 };
